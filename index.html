@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+
+<header class="bg-dark p-3">
+    <div class="container d-flex justify-content-between align-items-center">
+        <img src="./src/assets/logo.svg" alt="Book Store Logo" style="height: 50px;">
+        <nav>
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="./index.html">Главная</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="./pages/books.html">Книги</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="./pages/form.html">Фидбек</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main class="container mt-4">
+    <div class="row">
+        <div class="col-md-8">
+            <div class="banner">
+                <div>
+                    <h2>Добро пожаровать ан наш проект</h2>
+                    <p>Узнайте больше о нашем проекте!</p>
+                    <a href="./pages/about.html" class="link-btn">Узнать больше</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <h3>Жанры</h3>
+            <ul class="list-group">
+                <li class="list-group-item bg-dark text-white"><a href="#" class="text-white">Роман</a></li>
+                <li class="list-group-item bg-dark text-white"><a href="#" class="text-white">Мистика</a></li>
+                <li class="list-group-item bg-dark text-white"><a href="#" class="text-white">Фантастика</a></li>
+                <li class="list-group-item bg-dark text-white"><a href="#" class="text-white">Биография</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="mt-4">
+        <h3>Последнее добавленое</h3>
+        <div id="bookCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                      <div class="col">
+                        <div class="card bg-dark text-white">
+                            <div class="card-body">
+                                <h5 class="card-title title">Название No1</h5>
+                                <h6 class="card-subtitle author mb-2">Автор: Неизвестеен</h6>
+                                <h6 class="card-subtitle genre mb-2">Ужасы</h6>
+                                <p class="card-text">
+                                    Эта история разворачивается в мире, где страх и ужас пронизывают каждую клетку общества. В этом городе, где детские игры и радости контрастируют с мрачными тайнами и кошмарными видениями, что-то злое и древнее пробуждается из глубин
+                                </p>
+                                <a href="../pages/book.html" class="link-btn">Узнать больше</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                            <div class="card bg-dark text-white">
+                                <div class="card-body">
+                                    <h5 class="card-title title">Название No1</h5>
+                                    <h6 class="card-subtitle author mb-2">Автор: Неизвестеен</h6>
+                                    <h6 class="card-subtitle genre mb-2">Роман</h6>
+                                    <p class="card-text">
+                                        В мире, где пламя становится орудием контроля, а мысли и идеи подвергаются жестокой цензуре, разворачивается история о борьбе за свободу и индивидуальность. В этом обществе, где комфорт и безопасность ставятся выше знаний и понимания, каждое слово может стать опасным, а каждое действие иметь последствия.
+                                    </p>
+                                    <a href="../pages/book.html" class="link-btn">Узнать больше</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card bg-dark text-white">
+                                <div class="card-body">
+                                    <h5 class="card-title title">Название No1</h5>
+                                    <h6 class="card-subtitle author mb-2">Автор: Неизвестеен</h6>
+                                    <h6 class="card-subtitle genre mb-2">Роман</h6>
+                                    <p class="card-text">
+                                        Вы узнаете рецепт "вина из одуванчиков" — тайное зелье, способное раскрыть волшебство повседневности. Эта история заставит вас вспомнить о собственных летних приключениях и заставит задуматься о том, как важно ценить каждое мгновение.
+                                    </p>
+                                    <a href="../pages/book.html" class="link-btn">Узнать больше</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col">
+                            <div class="card bg-dark text-white">
+                                <div class="card-body">
+                                    <h5 class="card-title title">Название No1</h5>
+                                    <h6 class="card-subtitle author mb-2">Автор: Неизвестеен</h6>
+                                    <h6 class="card-subtitle genre mb-2">Роман</h6>
+                                    <p class="card-text">
+                                        Вы узнаете о древнем ритуале, способном пробудить силы, которые лучше оставить в забвении. Эта история заставит вас задуматься о том, что скрывается за границами человеческого понимания и как легко можно потерять себя в бездонных глубинах неизведанного
+                                    </p>
+                                    <a href="../pages/book.html" class="link-btn">Узнать больше</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card bg-dark text-white">
+                                <div class="card-body">
+                                    <h5 class="card-title title">Название No1</h5>
+                                    <h6 class="card-subtitle author mb-2">Автор: Неизвестеен</h6>
+                                    <h6 class="card-subtitle genre mb-2">Фантастика</h6>
+                                    <p class="card-text">
+                                        В этой книге вы обнаружите мир, полный загадок и тайн, где каждый шаг может привести к неожиданным последствиям. Эта история заставит вас задуматься о том, что такое свобода и независимость, и как важно ценить каждое мгновение жизни. Она перенесет вас в мир, где обычные правила не работают, и где каждый день может стать приключением.
+                                    </p>
+                                    <a href="../pages/book.html" class="link-btn">Узнать больше</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card bg-dark text-white">
+                                <div class="card-body">
+                                    <h5 class="card-title title">Название No1</h5>
+                                    <h6 class="card-subtitle author mb-2">Автор: Неизвестеен</h6>
+                                    <h6 class="card-subtitle genre mb-2">Фантастика</h6>
+                                    <p class="card-text">
+                                        В "Час быка" вы откроете двери в мир, где время и пространство теряют свои привычные границы. Эта история погружает вас в атмосферу напряжения и ожидания, заставляя задуматься о том, как важны выборы, которые мы делаем, и как они формируют нашу реальность.
+                                    </p>
+                                    <a href="../pages/book.html" class="link-btn">Узнать больше</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </div>
+</main>
+<footer class="text-center mt-4">
+    <div class="container">
+        <p class="text-white">© 2024 Kamill Meftahytdinov. All rights reserved.</p>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

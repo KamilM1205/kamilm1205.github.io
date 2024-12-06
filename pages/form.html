@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+<header class="bg-dark p-3">
+    <div class="container d-flex justify-content-between align-items-center">
+        <img src="../src/assets/logo.svg" alt="Book Store Logo" style="height: 50px;">
+        <nav>
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="../index.html">Главная</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="./books.html">Книги</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="./form.html">Фидбек</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main class="container mt-4">
+    <h2>Форма обратной связи</h2>
+    <form id="feedbackForm">
+        <div class="mb-3">
+            <label for="fullName" class="form-label">Полное имя</label>
+            <input type="text" class="form-control" id="fullName" required>
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Электронная почта</label>
+            <input type="email" class="form-control" id="email" required>
+        </div>
+        <div class="mb-3">
+            <label for="message" class="form-label">Сообщение</label>
+            <textarea class="form-control" id="message" rows="4" required></textarea>
+        </div>
+        <button type="submit" onclick="console.log(document.getElementById('fullName').value + '\n' + document.getElementById('email').value + '\n' + document.getElementById('message').value)" class="link-btn">Отправить</button>
+    </form>
+</main>
+
+<div class="modal fade" id="feedbackModal" tabindex="-1" aria-labelledby="feedbackModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="feedbackModalLabel">Сообщение</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" id="modalMessage">
+                Ваше сообщение успешно отправлено!
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="text-center mt-4">
+    <div class="container">
+        <p class="text-white">© 2024 Kamill Meftahytdinov. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../js/componnent_logic/modal.js"></script>
+</body>
+</html>
