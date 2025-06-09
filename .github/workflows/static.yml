@@ -15,13 +15,9 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@master
       - name: Validate HTML
-        uses: jonathan76/html5-validator@main
+        uses: wjdp/htmltest-action@master
         with:
-          html_files: '**/*.html'
-      - name: Validate HTML links
-        uses: modernweb-dev/check-html-links-action@v1
-        #with:
-        #  doc-folder: '.'
+          path: .
       - name: Deploy to GH Pages
         if: github.event_name == 'push'
         uses: peaceiris/actions-gh-pages@v4
