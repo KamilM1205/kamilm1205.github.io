@@ -1,0 +1,20 @@
+on:
+ push:
+   tags:
+     - '!refs/tags/*'
+   branches:
+     - '*'
+jobs:
+  run_tests:
+    runs_on: [ubuntu-latest]
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@master
+      - name: Validate HTML
+        uses: jonathan76/html5-validator@main
+        with:
+          html_files: '**/*.html'
+      - name: Validate HTML links
+        uses: modernweb-dev/check-html-links-action@v1
+        with:
+          html_files: '**/*.html'
