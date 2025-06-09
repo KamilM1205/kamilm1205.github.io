@@ -23,9 +23,11 @@ jobs:
         with:
           html_files: '**/*.html'
   deploy:
+    - name: Deploy to GH Pages
     if: github.event_name == 'push'
-    uses: peaceiris/actions-gh-pages@v4
-    with:
-      github_token: ${{ secrets.GITHUB_TOKEN }}
-      publish_dir: ./
-      publish_branch: gh-pages
+    steps:
+      uses: peaceiris/actions-gh-pages@v4
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./
+        publish_branch: gh-pages
