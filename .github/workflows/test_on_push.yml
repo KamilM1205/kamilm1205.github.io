@@ -5,7 +5,7 @@ on:
    branches:
      - '*'
 jobs:
-  - run_tests:
+  run_tests:
     runs-on: ubuntu-latest
     name: A job to test html pages
     permissions:
@@ -22,8 +22,8 @@ jobs:
         uses: modernweb-dev/check-html-links-action@v1
         #with:
         #  doc-folder: '.'
-  - deploy:
-    - name: Deploy to GH Pages
+  deploy:
+    name: Deploy to GH Pages
     if: github.event_name == 'push'
     steps:
       uses: peaceiris/actions-gh-pages@v4
