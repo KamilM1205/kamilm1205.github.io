@@ -20,8 +20,8 @@ jobs:
           html_files: '**/*.html'
       - name: Validate HTML links
         uses: modernweb-dev/check-html-links-action@v1
-        with:
-          doc-folder: '.'
+        #with:
+        #  doc-folder: '.'
   deploy:
     - name: Deploy to GH Pages
     if: github.event_name == 'push'
