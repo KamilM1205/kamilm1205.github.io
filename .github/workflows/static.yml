@@ -22,11 +22,10 @@ jobs:
         uses: modernweb-dev/check-html-links-action@v1
         #with:
         #  doc-folder: '.'
-  deploy:
-    name: Deploy to GH Pages
-    if: github.event_name == 'push'
-    uses: peaceiris/actions-gh-pages@v4
-    with:
-      github_token: ${{ secrets.GITHUB_TOKEN }}
-      publish_dir: ./
-      publish_branch: gh-pages
+      - name: Deploy to GH Pages
+        if: github.event_name == 'push'
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./
+          publish_branch: gh-pages
