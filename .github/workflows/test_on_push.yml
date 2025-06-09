@@ -6,7 +6,11 @@ on:
      - '*'
 jobs:
   run_tests:
-    runs_on: ubuntu-latest
+    runs-on: ubuntu-latest
+    name: A job to test html pages
+    permissions:
+      contents: write
+      pages: write
     steps:
       - name: Checkout repo
         uses: actions/checkout@master
@@ -18,3 +22,10 @@ jobs:
         uses: modernweb-dev/check-html-links-action@v1
         with:
           html_files: '**/*.html'
+  deploy:
+    if: github.event_name == 'push'
+    uses: peaceiris/actions-gh-pages@v4
+    with:
+      github_token: ${{ secrets.GITHUB_TOKEN }}
+      publish_dir: ./
+      publish_branch: gh-pages
