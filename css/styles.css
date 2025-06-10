@@ -1,0 +1,132 @@
+body {
+  background-color: #343a40;
+  color: #f5f6fa;
+  display: flex;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; 
+}
+main{
+  flex-grow: 1;
+}
+.banner {
+  background-image: url('../src/assets/img/114-370-3021-15-V6264873_m_600x600.jpg'); /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.banner > div > h2 , .banner > div > p {
+  color:#1d1d1d !important;
+}
+
+.carousel-item {
+  height: 100%;
+}
+footer {
+  background-color: #1d1d1d;
+  padding: 20px 0;
+}
+.link-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #1d1d1d;
+  color: white;
+  text-decoration: none;
+  border: 2px solid #1d1d1d;
+  transition: background-color 0.3s, color 0.3s;
+}
+.link-btn:hover {
+  background-color: #fed330;
+  color: #1d1d1d;
+}
+a:hover{
+  background-color: #fed330;
+  color: #1d1d1d !important;
+}
+.card p {
+  height: 50%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.wrapper {
+  display: flex;
+  margin-top: 20px;
+}
+.search-block {
+  width: 20%;
+  max-height: 340px;
+  border-bottom: 1px solid #f5f6fa;
+  padding: 20px;
+  border-radius: 0;
+}
+.search-block input {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #f5f6fa;
+  background-color: #1d1d1d;
+  color: #f5f6fa;
+  border-radius: 0;
+  width: 100%;
+}
+.search-block input::placeholder {
+  color: #f5f6fa;
+}
+
+.search-block input:hover {
+  background-color: #fed330;
+  color: #1d1d1d;
+  border-color: #fed330;
+}
+.book-list {
+  width: 80%;
+  padding-left: 20px;
+}
+.book-list .card {
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 10px;
+}
+
+/* book page */
+.book-info {
+  background-color: #1d1d1d; 
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.book-title {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+.book-author, .book-date, .book-genres {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+.book-description {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-top: 10px;
+  font-family: 'Georgia', serif;
+}
+.download-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #fed330;
+  color: #1d1d1d;
+  text-decoration: none;
+  border-radius: 0;
+  transition: background-color 0.3s, color 0.3s;
+  margin-top: 15px;
+}
+.download-btn:hover {
+  background-color: #1d1d1d;
+  color: #fed330;
+}
+.modal{
+  color: #1d1d1d;
+}
