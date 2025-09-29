@@ -14,6 +14,8 @@ jobs:
     steps:  
       - name: Checkout repo
         uses: actions/checkout@master
+      - name: Run simple script
+        run: bash .github/script.sh
       - name: Validate HTML
         uses: wjdp/htmltest-action@master
         with:
